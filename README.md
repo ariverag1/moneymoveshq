@@ -6,11 +6,18 @@ Static website for MoneyMovesHQ.
 
 ```text
 .
-├── index.html
-├── images/
-│   ├── graduation_parents.jpg
-│   └── speaking.jpg
-└── README.md
+|-- index.html
+|-- images/
+|   |-- confidence.jpg
+|   |-- grad_parents.jpg
+|   |-- grad_party.jpg
+|   |-- grad_speech1.jpg
+|   |-- grad_speech2.jpg
+|   |-- guanajuato-mexico.jpg
+|   |-- la-marathon.jpg
+|   |-- video-thumb-1.jpg
+|   `-- video-thumb-2.jpg
+`-- README.md
 ```
 
 Image paths in `index.html` use the deployable format:
@@ -38,9 +45,8 @@ http://localhost:8000
 From the project folder:
 
 ```bash
-git init
 git add index.html images README.md
-git commit -m "Prepare static site for deployment"
+git commit -m "Prepare site for GitHub and Netlify"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 git push -u origin main
@@ -58,10 +64,3 @@ Replace `YOUR_USERNAME` and `YOUR_REPOSITORY` with your GitHub account and repos
    - Build command: leave blank
    - Publish directory: `.`
 6. Deploy the site.
-
-Before publishing, confirm the real image files are present in `images/` with these exact filenames:
-
-```text
-graduation_parents.jpg
-speaking.jpg
-```
